@@ -1,32 +1,88 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: radial-gradient(circle at top, #0b132b, #020617);
+  color: #ffffff;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+  text-align: center;
+  padding: 140px 20px 120px;
+}
+
+.intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  letter-spacing: 6px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.35);
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+/* =========================
+   SECCIONES GENERALES
+========================= */
+
 .bloque {
-  margin: 100px auto;
-  max-width: 1000px;
+  max-width: 1100px;
+  margin: 120px auto;
+  padding: 0 20px;
   text-align: center;
 }
 
 .bloque h2 {
-  font-size: 36px;
-  letter-spacing: 4px;
-  margin-bottom: 60px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+  margin-bottom: 70px;
   font-weight: 300;
   text-transform: uppercase;
   color: #f5f5f5;
-  text-shadow: 0 0 20px rgba(255,255,255,0.25);
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
 }
+
+/* =========================
+   CARD CON TEXTO SOBRE IMAGEN
+========================= */
 
 .card-overlay {
   position: relative;
-  margin-bottom: 70px;
-  border-radius: 20px;
+  margin-bottom: 90px;
+  border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.65);
 }
 
 .card-overlay img {
   width: 100%;
   display: block;
-  filter: brightness(0.7);
+  filter: brightness(0.65) contrast(1.05);
 }
+
+/* =========================
+   TEXTO SOBRE IMAGEN
+========================= */
 
 .texto-overlay {
   position: absolute;
@@ -35,27 +91,67 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 50px 40px;
+  text-align: center;
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.3),
-    rgba(0,0,0,0.6)
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.65)
   );
-  color: #ffffff;
 }
 
 .texto-overlay h3 {
-  font-size: 26px;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
   font-weight: 400;
-  text-shadow: 0 0 25px rgba(255,255,255,0.35);
+  text-transform: uppercase;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.35);
 }
 
 .texto-overlay p {
-  max-width: 700px;
-  font-size: 18px;
-  line-height: 1.7;
-  opacity: 0.95;
+  max-width: 750px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  opacity: 0.92;
+}
+
+/* =========================
+   RESPONSIVE (MÓVIL)
+========================= */
+
+@media (max-width: 768px) {
+
+  .intro {
+    padding: 100px 20px 90px;
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+  }
+
+  .bloque {
+    margin: 90px auto;
+  }
+
+  .bloque h2 {
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+  }
+
+  .texto-overlay {
+    padding: 35px 25px;
+  }
+
+  .texto-overlay h3 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+  }
+
+  .texto-overlay p {
+    font-size: 0.95rem;
+  }
 }
