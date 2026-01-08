@@ -10,11 +10,6 @@
 
   <!-- ESTILOS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- PAYPAL SDK (SE CARGA UNA SOLA VEZ) -->
-  <script 
-    src="https://www.paypal.com/sdk/js?client-id=BAAJJwt0XFzk1DZcQY396Bo9CgYDrvN4Uz6WIFKi2bIdt-7UjX9DDd_U2NHS0wpsHJ5tRd4AT4f1KSt4m0&components=hosted-buttons&disable-funding=venmo&currency=USD">
-  </script>
 </head>
 
 <body>
@@ -108,7 +103,13 @@
         Un espacio para volver al cuerpo, regular el sistema interno
         y reconstruir el vínculo contigo mismo desde la verdad y la presencia.
       </p>
-      <div id="paypal-container-T9NSTD8LK9BLL"></div>
+
+      <a 
+        href="https://www.paypal.com/ncp/payment/T9NSTD8LK9BLL" 
+        target="_blank" 
+        class="paypal-btn">
+        Pagar con PayPal
+      </a>
     </div>
 
     <!-- SALA MARCA PERSONAL -->
@@ -119,21 +120,16 @@
         sin máscaras, sin fórmulas vacías,
         desde tu presencia real.
       </p>
-      <div id="paypal-container-XWLYRJHFQPS6W"></div>
+
+      <a 
+        href="https://www.paypal.com/ncp/payment/XWLYRJHFQPS6W" 
+        target="_blank" 
+        class="paypal-btn">
+        Pagar con PayPal
+      </a>
     </div>
 
   </section>
-
-  <!-- ================= PAYPAL BUTTONS ================= -->
-  <script>
-    paypal.HostedButtons({
-      hostedButtonId: "T9NSTD8LK9BLL",
-    }).render("#paypal-container-T9NSTD8LK9BLL");
-
-    paypal.HostedButtons({
-      hostedButtonId: "XWLYRJHFQPS6W",
-    }).render("#paypal-container-XWLYRJHFQPS6W");
-  </script>
 
 </body>
 </html>
