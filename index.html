@@ -10,16 +10,21 @@
 
   <!-- ESTILOS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- PAYPAL SDK (SE CARGA UNA SOLA VEZ) -->
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAJJwt0XFzk1DZcQY396Bo9CgYDrvN4Uz6WIFKi2bIdt-7UjX9DDd_U2NHS0wpsHJ5tRd4AT4f1KSt4m0&components=hosted-buttons&disable-funding=venmo&currency=USD">
+  </script>
 </head>
 
 <body>
 
-  <!-- INTRO -->
+  <!-- ================= INTRO ================= -->
   <section class="intro">
     <h1>PRESENCIA VIVA</h1>
     <p>
-      No es motivación.  
-      No es espiritualidad decorativa.  
+      No es motivación.<br>
+      No es espiritualidad decorativa.<br>
       Es volver al cuerpo, a la verdad y a la vida real.
     </p>
   </section>
@@ -90,6 +95,45 @@
     </div>
 
   </section>
+
+  <!-- ================= SALAS ================= -->
+  <section class="bloque">
+
+    <h2>SALAS VIVAS</h2>
+
+    <!-- SALA AMOR PROPIO & PRESENCIA -->
+    <div class="sala">
+      <h3>SALA AMOR PROPIO & PRESENCIA</h3>
+      <p>
+        Un espacio para volver al cuerpo, regular el sistema interno
+        y reconstruir el vínculo contigo mismo desde la verdad y la presencia.
+      </p>
+      <div id="paypal-container-T9NSTD8LK9BLL"></div>
+    </div>
+
+    <!-- SALA MARCA PERSONAL -->
+    <div class="sala">
+      <h3>SALA MARCA PERSONAL</h3>
+      <p>
+        Construí una marca alineada a tu verdad,
+        sin máscaras, sin fórmulas vacías,
+        desde tu presencia real.
+      </p>
+      <div id="paypal-container-XWLYRJHFQPS6W"></div>
+    </div>
+
+  </section>
+
+  <!-- ================= PAYPAL BUTTONS ================= -->
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "T9NSTD8LK9BLL",
+    }).render("#paypal-container-T9NSTD8LK9BLL");
+
+    paypal.HostedButtons({
+      hostedButtonId: "XWLYRJHFQPS6W",
+    }).render("#paypal-container-XWLYRJHFQPS6W");
+  </script>
 
 </body>
 </html>
