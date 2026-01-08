@@ -1,7 +1,3 @@
-/* =========================
-   RESET BÁSICO
-========================= */
-
 * {
   box-sizing: border-box;
 }
@@ -13,13 +9,11 @@ body {
   color: #ffffff;
 }
 
-/* =========================
-   INTRO
-========================= */
+/* INTRO */
 
 .intro {
   text-align: center;
-  padding: 140px 20px 120px;
+  padding: 140px 20px;
 }
 
 .intro h1 {
@@ -27,22 +21,25 @@ body {
   font-size: 3rem;
   letter-spacing: 6px;
   font-weight: 300;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.35);
 }
 
 .intro p {
   max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  margin: 30px auto;
   opacity: 0.75;
 }
 
-/* =========================
-   SECCIONES GENERALES
-========================= */
+.cta-principal {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 36px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+/* SECCIONES */
 
 .bloque {
   max-width: 1100px;
@@ -53,36 +50,23 @@ body {
 
 .bloque h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.4rem;
   letter-spacing: 5px;
   margin-bottom: 70px;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #f5f5f5;
-  text-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
 }
 
-/* =========================
-   CARD CON TEXTO SOBRE IMAGEN
-========================= */
+/* CARDS */
 
 .card-overlay {
   position: relative;
   margin-bottom: 90px;
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.65);
 }
 
 .card-overlay img {
   width: 100%;
-  display: block;
-  filter: brightness(0.65) contrast(1.05);
+  filter: brightness(0.65);
 }
-
-/* =========================
-   TEXTO SOBRE IMAGEN
-========================= */
 
 .texto-overlay {
   position: absolute;
@@ -90,99 +74,43 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 50px 40px;
-  text-align: center;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.65)
-  );
+  padding: 40px;
+  background: rgba(0,0,0,0.45);
 }
 
-.texto-overlay h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  letter-spacing: 4px;
-  margin-bottom: 25px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.35);
+/* SERVICIOS */
+
+.servicio {
+  margin-bottom: 80px;
 }
 
-.texto-overlay p {
-  max-width: 750px;
-  font-size: 1.05rem;
-  line-height: 1.75;
-  opacity: 0.92;
+.servicio h3 {
+  letter-spacing: 3px;
 }
 
-/* =========================
-   BOTÓN PAYPAL (NUEVO)
-========================= */
+.precio {
+  margin: 20px 0;
+  font-weight: bold;
+}
 
-.paypal-btn {
+.btn-pago {
   display: inline-block;
-  margin-top: 30px;
-  padding: 16px 34px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  padding: 14px 30px;
+  border: 1px solid #fff;
+  color: #fff;
   text-decoration: none;
-  color: #ffffff;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 30px;
-  transition: all 0.35s ease;
 }
 
-.paypal-btn:hover {
-  background: #ffffff;
-  color: #020617;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+/* FOOTER */
+
+.footer {
+  padding: 60px 20px;
+  text-align: center;
+  opacity: 0.7;
 }
 
-/* =========================
-   RESPONSIVE (MÓVIL)
-========================= */
-
-@media (max-width: 768px) {
-
-  .intro {
-    padding: 100px 20px 90px;
-  }
-
-  .intro h1 {
-    font-size: 2.2rem;
-    letter-spacing: 4px;
-  }
-
-  .bloque {
-    margin: 90px auto;
-  }
-
-  .bloque h2 {
-    font-size: 1.9rem;
-    letter-spacing: 3px;
-    margin-bottom: 50px;
-  }
-
-  .texto-overlay {
-    padding: 35px 25px;
-  }
-
-  .texto-overlay h3 {
-    font-size: 1.4rem;
-    letter-spacing: 3px;
-  }
-
-  .texto-overlay p {
-    font-size: 0.95rem;
-  }
-
-  .paypal-btn {
-    padding: 14px 28px;
-    font-size: 0.75rem;
-  }
+.footer .redes a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
 }
